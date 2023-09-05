@@ -106,9 +106,9 @@ end
 print(isturnback(1))
 
 function letChoose(index)
-    return tonumber(index) > 5 and "yes" or "no"
+    return index > 5 and "yes" or "no"
 end
 
-i = io.read()
+i = tonumber(io.read())
 print(i)
 print(letChoose(i))
