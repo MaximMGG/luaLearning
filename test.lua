@@ -123,10 +123,48 @@ end
 -- a[#a] = a[#a] + 1
 -- print(a[#a])
 
-M = {"Hello", "my", "name", "is", "Maxim", nil}
+-- M = {"Hello", "my", "name", "is", "Maxim", nil}
 
-for i = 1, #M do
-    print(M[i])
-end
+-- for i = 1, #M do
+--     print(M[i])
+-- end
 
-print(#M)
+-- print(#M)
+
+-- pipeline = {
+--     hello = 4,
+--     bye = 3,
+--     amigo = 98,
+--     { x = 0, y = 1 },
+--     { x = 12, y = 2 }
+-- }
+
+-- print(pipeline.hello)
+-- print(pipeline[1].y)
+
+-- pipeline[1].y = { anoger = 2, one = 3 }
+-- print(pipeline[1].y.one)
+
+-- pipeline[1].y.one = { hereWeGo = { "Are you expected this?" } }
+
+-- print(pipeline[1].y.one.hereWeGo[1])
+
+-- opnames = {["+"]="add", ["-"]="sub", ["*"]="mul", ["/"]="div"}
+
+-- i = 20; s = "-"
+-- a = {[i+0] = s, [i+1]= s .. s, [i+2]= s .. s .. s}
+
+-- print(opnames[s])
+-- print(a[22])
+
+-- b = "+"
+
+-- print(opnames[b])
+
+-- a = {[1]="one", [2]="two"}
+
+-- print(a[2])
+
+sunday = "mondey"; mondey = "sundey"
+t = {sunday = "mondey", [sunday] = "mondey"}
+print(t.sunday, t[sunday], t[t.sunday])
