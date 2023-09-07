@@ -103,12 +103,30 @@ function isturnback(angle)
     return (math.abs(angle - 180) < tolerance)
 end
 
-print(isturnback(1))
+-- print(isturnback(1))
 
 function letChoose(index)
     return index > 5 and "yes" or "no"
 end
 
-i = tonumber(io.read())
-print(i)
-print(letChoose(i))
+-- i = tonumber(io.read())
+-- print(i)
+-- print(letChoose(i))
+
+-- a = "Hello"
+-- b = a .. " world"
+-- print(b)
+-- print("000" .. "01")
+
+-- a = {}
+-- a[#a] = 2
+-- a[#a] = a[#a] + 1
+-- print(a[#a])
+
+M = {"Hello", "my", "name", "is", "Maxim", nil}
+
+for i = 1, #M do
+    print(M[i])
+end
+
+print(#M)
