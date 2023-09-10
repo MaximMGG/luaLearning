@@ -165,6 +165,17 @@ end
 
 -- print(a[2])
 
-sunday = "mondey"; mondey = "sundey"
-t = {sunday = "mondey", [sunday] = "mondey"}
-print(t.sunday, t[sunday], t[t.sunday])
+-- sunday = "mondey"; mondey = "sundey"
+-- t = {sunday = "mondey", [sunday] = "mondey"}
+-- print(t.sunday, t[sunday], t[t.sunday])
+
+-- table = {"hello", "bob", "eee"}
+
+-- local i = 1;
+
+-- while table[i] do
+--     print(table[i])
+--     i = i + 1
+-- end
+
+print(math.maxinteger)
