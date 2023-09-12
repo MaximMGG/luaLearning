@@ -171,6 +171,10 @@ end
 
 -- table = {"hello", "bob", "eee"}
 
+-- for k, v in pairs(table) do
+--     print(k)
+-- end
+
 -- local i = 1;
 
 -- while table[i] do
@@ -178,4 +182,63 @@ end
 --     i = i + 1
 -- end
 
-print(math.maxinteger)
+-- print(math.maxinteger)
+
+-- function getTrues(a, b)
+--     if ((a + b) % 2 == 0) then
+--         return true
+--     else
+--         return false
+--     end
+-- end
+
+-- i = 2
+-- b = 1
+-- while getTrues(i, b) ~= false do
+--     ::redo::
+--     if (i % 2 == 0) then
+--         i = i + 1
+--         goto redo
+--     end
+--     if (b % 2 == 0) then
+--         b = b + 2
+--         goto redo
+--     end
+--     print("hello ", b)
+-- end
+-- mi, m = findMaximum(numericTable)
+
+numericTable = {12, 15, 2, 542, 1, 234, 2222, 0}
+
+--Here function for findMaximum from table
+function findMaximum(t)
+    local mi = 1
+    local m = t[mi]
+    for i = 1, #t do
+        if t[i] > m then
+            m = t[i]
+            mi = i
+        end
+    end
+    return mi, m
+end
+
+mi, m = findMaximum(numericTable)
+-- mi, m = findMaximumAnotherWay(numericTable)
+
+print(mi, m)
+
+--here is refactor function finaMaximum
+function findMaximumAnotherWay(t)
+    local mi = 1
+    local m = t[mi]
+    for k, v in pairs(t) do
+        mi = v > m and k or mi
+        m = v > m and v or m
+    end
+    return mi, m
+end
+
+-- a, b = findMaximumAnotherWay(numericTable)
+
+-- print(a, b)
