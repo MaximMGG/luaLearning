@@ -223,7 +223,7 @@ function findMaximum(t)
     return mi, m
 end
 
-mi, m = findMaximum(numericTable)
+-- mi, m = findMaximum(numericTable)
 -- mi, m = findMaximumAnotherWay(numericTable)
 
 print(mi, m)
@@ -242,3 +242,4 @@ end
 -- a, b = findMaximumAnotherWay(numericTable)
 
 -- print(a, b)
+
