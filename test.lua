@@ -226,7 +226,7 @@ end
 -- mi, m = findMaximum(numericTable)
 -- mi, m = findMaximumAnotherWay(numericTable)
 
-print(mi, m)
+-- print(mi, m)
 
 --here is refactor function finaMaximum
 function findMaximumAnotherWay(t)
@@ -240,6 +240,39 @@ function findMaximumAnotherWay(t)
 end
 
 -- a, b = findMaximumAnotherWay(numericTable)
-
 -- print(a, b)
 
+tables = {a ="Hello",
+        {"Bye", "cot", {"name"}}}
+
+-- print(tables.a)
+
+list.add(2)
+
+-- print(list.get(1))
+
+f = string.find
+a = {"Hello", "ll"}
+
+-- print(f(table.unpack(a)))
+
+
+function add(...)
+    local s = 0
+    for i, v in pairs{...} do
+        s = s + v
+    end
+    return s
+end
+
+-- print(add(1, 2, 3, 4, 5))
+
+function nonils(...)
+    local t = table.pack(...)
+    for i = 1, t.n do 
+        if t[i] == nil then return false end
+    end
+    return true
+end
+
+print(nonils(1, 2))
